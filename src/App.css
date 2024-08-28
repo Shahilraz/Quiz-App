@@ -1,0 +1,97 @@
+.App{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.Menu, .Quiz,.EndScreen{
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: rgb(9, 56, 223);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+/* .Menu button, .Quiz button , .EndScreen button{
+   width: 300px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  
+}   */
+.questions {  
+  font-size: 2.5rem; /* Large font size for emphasis */  
+  color: rgb(194, 255, 192); /* Dark color for readability */  
+  text-align: center; /* Centered text */  
+  letter-spacing: 1.5px; /* Spacing between letters */  
+  text-transform: capitalize; /* Capitalize the first letter of each word */  
+  margin: 20px 0; /* Vertical spacing */  
+  font-weight: bold; /* Bold text */  
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */  
+}  
+
+
+
+
+.options{
+  width:  100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+/* From Uiverse.io by adamgiebl */ 
+button {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #a92138;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #0040ff;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+
+}
+
+button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #0400ff;
+  z-index: -1;
+}
+
+button:hover, button:focus {
+  color: white;
+}
+
+button:hover:before, button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+button:active {
+  transform: scale(0.9);
+}
